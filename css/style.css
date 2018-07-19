@@ -1,0 +1,464 @@
+    
+/**************************************
+BENDRI STILIAI
+***************************************/
+
+p {
+	font-size: 18px;
+    margin: 0px;
+}
+
+h1 {
+	margin-top: 0;
+    font-size: 1.5em;
+}
+
+.test {
+    z-index: 10000;
+    height: 300px;
+    width: 500px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*
+.scrollable {
+	overflow-y: scroll !important;
+	overflow-x: hidden !important;
+	height: 100% !important;
+}
+*/
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+/**************************************
+DARBALAUKIS
+***************************************/
+
+.past, .future {
+	visibility: hidden;
+}
+
+#main {
+	background-image: url("../inc/Background.svg");
+	width: 3200px;
+	height: 3200px;
+	background-repeat: no-repeat;
+	visibility: visible;
+}
+
+/**************************************
+MENIU
+***************************************/
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anim-meniu {
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-long {
+    position: absolute;
+    display: none;
+    width: 525px; 
+    height: 580px;
+    z-index: 1000;
+}
+
+/**************************************
+MOBILUS MENIU
+***************************************/
+
+.menu-wrap {
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.menu-mobile-wrap {
+    width: 555.469px;
+    height: 150px;
+}
+
+.menu-mobile {
+    width: 100%;
+    position: fixed;
+    z-index: 2000;
+}
+
+/**************************************
+KORTELIŲ STILIUS
+***************************************/
+
+.box {
+    display: flex;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+    justify-content: center;
+}
+
+.svet-kur {
+	border: 2px solid #FAAF3C;
+}
+
+.market {
+	border: 2px solid #8CC541;
+    display: flex;
+}
+
+.diz-darb {
+	border: 2px solid #C0282D;
+}
+
+.kitos-p {
+	border: 2px solid #2CA9E1;
+}
+
+.svet-kur, .market, .diz-darb, .kitos-p {
+	background-color: rgb(255,255,255);
+	border-radius: 10px;
+}
+
+.pl {
+    padding: 20px;
+    width: 50vw;
+    z-index: 2;
+}
+
+.orient {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/**************************************
+VIDINIAI KORTELIŲ STILIAI
+***************************************/
+
+.svet-kur h1 {
+	color: #FAAF3C;
+}
+
+.market h1 {
+	color: #8CC541;
+}
+
+.diz-darb h1 {
+	color: #C0282D;
+}
+
+.kitos-p h1 {
+	color: #2CA9E1;
+}
+
+.paslauga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2px;
+    padding: 20px;
+    text-align: center;
+    width: 40px;
+    writing-mode: tb-rl;
+/*    height: auto;*/
+}
+
+/**************************************
+KORTELIŲ FOTO
+***************************************/
+
+.photo {
+    position: absolute;
+    top: -15em;
+}
+
+/**************************************
+PARAŠYKITE MUMS
+***************************************/
+
+.contact-us {
+/*
+    height: 100vh;
+    width: 100%;
+*/
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    flex-direction: column-reverse;
+    z-index: 2;
+    bottom: 15px;
+    right: 80px;
+}
+
+.icon {
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+        border-radius: 99em;
+    -webkit-border-radius: 99em;
+    -moz-border-radius: 99em;
+}
+
+.icon:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.forma1 {
+	display: flex;
+	flex-direction: column;
+    border: solid 3px #18457E;
+    border-radius: 5px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+/*    display: none;*/
+}
+
+.forma1 #vardas, #email, #submit {
+	height: 35px;
+}
+
+.forma1 #zinute {
+	height: 128.3px;
+}
+
+.forma1 #submit {
+	width: 86px;
+	align-self: flex-end;
+}
+
+.forma1 #vardas, #email, #submit, #zinute {
+	border: solid 3px #18457E;
+	border-radius: 5px;
+	font-size: 21.33px;
+    background: #7080AC;
+    color: white;
+}
+
+.forma1 #vardas, #email, #zinute {
+	margin-bottom: 16px;
+}
+
+::-webkit-input-placeholder {
+	color: white;
+	padding-left: 13.5px;
+}
+
+#submit {
+	background: #7080AC;
+	color: white;
+    cursor: pointer;
+}
+
+.patvirtinimas {
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+    border: solid 3px #18457E;
+    border-radius: 5px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+}
+
+/**************************************
+PATVIRTINIMO IKONA
+***************************************/
+
+@keyframes scaleAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes drawCircle {
+  0% {
+    stroke-dashoffset: 151px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes drawCheck {
+  0% {
+    stroke-dashoffset: 36px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#successAnimationCircle {
+  stroke-dasharray: 151px 151px;
+  stroke: green;
+}
+#successAnimationCheck {
+  stroke-dasharray: 36px 36px;
+  stroke: green;
+}
+#successAnimationResult {
+  fill: green;
+  opacity: 0;
+}
+#successAnimation.animated {
+  animation: 1s ease-out 0s 1 both scaleAnimation;
+}
+#successAnimation.animated #successAnimationCircle {
+  animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCircle, 0.3s linear 0.9s 1 both fadeOut;
+}
+#successAnimation.animated #successAnimationCheck {
+  animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCheck, 0.3s linear 0.9s 1 both fadeOut;
+}
+#successAnimation.animated #successAnimationResult {
+  animation: 0.3s linear 0.9s both fadeIn;
+}
+#replay {
+  background: rgba(255, 255, 255, 0.2);
+  border: 0;
+  border-radius: 3px;
+  bottom: 100px;
+  color: #fff;
+  left: 50%;
+  outline: 0;
+  padding: 10px 30px;
+  position: absolute;
+  transform: translateX(-50%);
+}
+#replay:active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/**************************************
+TOOLTIPS
+***************************************/
+
+.tooltip-inner {
+    max-width: 500px;
+    padding: 3px 8px;
+    color: #000;
+    text-align: center;
+    background-color: #fff;
+    border-radius: .25rem;
+    font-size: 16px;
+}
+
+.yellow-tooltip + .tooltip > .tooltip-inner {
+    border: 1px solid #FAAF3C;
+}
+
+.yellow-tooltip + .tooltip.top > .tooltip-arrow {
+    border-top-color: #FAAF3C;
+}
+
+.green-tooltip + .tooltip > .tooltip-inner {
+    border: 1px solid #8CC541;
+}
+
+.green-tooltip + .tooltip.top > .tooltip-arrow {
+    border-top-color: #8CC541;
+}
+
+.red-tooltip + .tooltip > .tooltip-inner {
+    border: 1px solid #C0282D;
+}
+
+.red-tooltip + .tooltip.top > .tooltip-arrow {
+    border-top-color: #C0282D;
+}
+
+.blue-tooltip + .tooltip > .tooltip-inner {
+    border: 1px solid #2CA9E1;
+}
+
+.blue-tooltip + .tooltip.top > .tooltip-arrow {
+    border-top-color: #2CA9E1;
+}
+
+/**************************************
+STRAIPSNIAI IR KLAUSIMAI
+***************************************/
+
+.klausimas {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.str-margin {
+    margin-top: 4em;
+}
+
+.str-kls {
+    margin-top: 2.85em;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+}
+
+.str-y {
+    border: 2px solid #FAAF3C;
+    background-color: #fff;
+    padding: 1px;
+    position: absolute;
+    border-radius: 3px;
+    top: 30px;
+    z-index: 3;
+    right: 40px;
+}
+
+.str-y h5 {
+    padding: 0;
+    margin: 0;
+    color: #FAAF3C;
+}
+
+/**************************************
+RESPONSIVE
+***************************************/
+@media screen and (max-width: 850px) {
+    .menu-wrap {
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .anim-meniu {
+        display: none;
+    }
+    
+    .menu-long {
+        display: none;
+    }
+}
