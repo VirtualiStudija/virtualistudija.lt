@@ -1829,7 +1829,7 @@ p.nominalBounds = new cjs.Rectangle(-29.8,-22.5,59.7,45.1);
 		this.I.addEventListener("click", fl_ClickToGoToWebPage);
 		
 		function fl_ClickToGoToWebPage() {
-			 window.location.href = "http://localhost/new_virtualistudija/#/svetainiu-kurimas";
+			 window.location.href = "/#/svetainiu-kurimas";
 			 window.parent.document.querySelector('.menu-long').style.display = "block";
 		}
 		
@@ -1838,7 +1838,7 @@ p.nominalBounds = new cjs.Rectangle(-29.8,-22.5,59.7,45.1);
 		this.M.addEventListener("click", fl2_ClickToGoToWebPage);
 		
 		function fl2_ClickToGoToWebPage() {
-			 window.location.href = "http://localhost/new_virtualistudija/#/marketingas";
+			 window.location.href = "/#/marketingas";
 			 window.parent.document.querySelector('.menu-long').style.display = "block";
 		}
 		
@@ -1847,7 +1847,7 @@ p.nominalBounds = new cjs.Rectangle(-29.8,-22.5,59.7,45.1);
 		this.D.addEventListener("click", fl3_ClickToGoToWebPage);
 		
 		function fl3_ClickToGoToWebPage() {
-			 window.location.href = "http://localhost/new_virtualistudija/#/dizaino-darbai";
+			 window.location.href = "/#/dizaino-darbai";
 			 window.parent.document.querySelector('.menu-long').style.display = "block";
 		}
 		
@@ -1856,7 +1856,7 @@ p.nominalBounds = new cjs.Rectangle(-29.8,-22.5,59.7,45.1);
 		this.K.addEventListener("click", fl4_ClickToGoToWebPage);
 		
 		function fl4_ClickToGoToWebPage() {
-			 window.location.href = "http://localhost/new_virtualistudija/#/kitos-paslaugos";
+			 window.location.href = "/#/kitos-paslaugos";
 			 window.parent.document.querySelector('.menu-long').style.display = "block";
 		}
 		

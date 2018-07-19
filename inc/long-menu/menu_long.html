@@ -67,7 +67,7 @@ function handleComplete() {
 			lastW = iw; lastH = ih; lastS = sRatio;		
 		}
 	}
-	makeResponsive(false,'both',false,1);	
+	makeResponsive(true,'both',true,1);	
 	fnStartAnimation();
 }
 </script>
@@ -75,7 +75,7 @@ function handleComplete() {
 </head>
 <body onload="init();" style="margin:0px;">
 	<div id="animation_container" style="background-color:rgba(255, 255, 255, 0); width:524px; height:580px">
-		<canvas id="canvas" width="524" height="580" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<canvas id="canvas" width="524" height="580" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0);"></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:524px; height:580px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>

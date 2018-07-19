@@ -10,7 +10,7 @@
 		<script src="js/init.js"></script>
         <script>
 //            window.location.href = "http://virtualistudija.lt/#/meniu"; 
-            window.location.href = "http://localhost/new_virtualistudija/#/meniu"; 
+            window.location.href = "http://virtualistudija.lt/#/meniu"; 
         </script>
         
         
