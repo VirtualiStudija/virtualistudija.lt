@@ -11,11 +11,11 @@ $(window).bind('hashchange', function(){
     }
 });
 
-$(window).resize(function() {
-  if ($(window).width() < 1000) {
-        menu.style.display = "none";
-  }
-});
+//$(window).resize(function() {
+//  if ($(window).width() < 1000) {
+//        menu.style.display = "none";
+//  }
+//});
 
 /////////////////////////////////////////////////////
 ////////////////// PARAŠYKIT MUMS ///////////////////
